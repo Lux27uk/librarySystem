@@ -5,7 +5,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-here-please-change-it'
 DEBUG = True
-ALLOWED_HOSTS = {'localhost', 'liux.pythonanywhere.com'}
+ALLOWED_HOSTS = [
+    'liux.eu.pythonanywhere.com',  #
+    'www.liux.eu.pythonanywhere.com',
+    # 如果需要本地开发，可以添加：
+    'localhost',
+    '127.0.0.1',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
